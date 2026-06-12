@@ -1,0 +1,44 @@
+name: restaurant_app
+description: Scan & Order Restaurant App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.24.2
+  cloud_firestore: ^4.14.0
+
+  # QR & Deep Links
+  app_links: ^4.0.0          # handles deep links / universal links
+  qr_flutter: ^4.1.0         # for generating QR codes (admin utility screen)
+
+  # UI
+  google_fonts: ^6.1.0
+  cached_network_image: ^3.3.1
+  flutter_animate: ^4.5.0
+  badges: ^3.1.2
+  lottie: ^3.0.0
+
+  # State management
+  provider: ^6.1.1
+
+  # Utils
+  uuid: ^4.2.1
+  intl: ^0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/lottie/
